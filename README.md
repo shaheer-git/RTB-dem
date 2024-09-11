@@ -1,1 +1,1 @@
-# Please copy this code and paste this code. 
+# Please copy and paste this code.

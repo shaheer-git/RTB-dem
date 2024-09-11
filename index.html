@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('data:image/svg+xml,<svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="900" height="600" fill="%23004060"></rect><path d="M0 437L21.5 444.8C43 452.7 86 468.3 128.8 470.7C171.7 473 214.3 462 257.2 445.5C300 429 343 407 385.8 398.5C428.7 390 471.3 395 514.2 414.7C557 434.3 600 468.7 642.8 467.5C685.7 466.3 728.3 429.7 771.2 425.8C814 422 857 451 878.5 465.5L900 480L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z" fill="%2381a1d0" stroke-linecap="round" stroke-linejoin="miter"></path></svg>');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fefae0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container > p {
+            padding: 12px;
+            margin: 4px;
+            font-size: medium;
+            line-height: 22px;
+            color: #fefae0;
+            text-align: center;
+            width: 80%;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px 15px;
+        }
+
+        menu{
+            display: flex;
+            gap: 25px;
+            cursor: pointer;
+        }
+        menu > span:hover {
+            color: #fefae07d;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar">
+            <div>Lorem</div>
+            <div>
+                <menu>
+                    <span>Home</span><span>About</span><span>How it works</span>
+                </menu>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>Welcome to the Web Page</h1>
+
+            <p>This is the first paragraph of the web page. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolorum, adipisci! Explicabo illo suscipit, molestiae quasi commodi porro nisi eligendi ratione ut
+                natus. In
+                doloremque, repellat incidunt accusantium impedit nobis provident.
+            </p>
+        </div>
+    </div>
+    <script>
+        const insertImage = (url) => {
+            const img = document.createElement("img");
+            img.src = url;
+            img.width = 300;
+            img.height = 250;
+            img.alt = "RTB demand";
+
+            const paragraph = document.querySelector("p");
+            paragraph.parentNode.insertBefore(img, paragraph);
+        }
+        window.onload = function () {
+            insertImage("https://img.freepik.com/free-psd/movie-time-square-flyer-template-with-photo_23-2148575766.jpg?w=740&t=st=1726066147~exp=1726066747~hmac=2a23ba6dfe2eacc1b1d57d041bae0861456ce55596076faf97808c0b4c40d452");
+        }
+    </script>
+</body>
+
+</html>
